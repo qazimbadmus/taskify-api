@@ -28,7 +28,7 @@ A secure REST API for managing user tasks with JWT authentication.
 pip install -r requirements.txt
 python app.py
 
-**## API Testing**
+**API Testing**
 
 You can test the API using Postman.  
 Import this collection: [Task_API.postman_collection.json](./Task_API.postman_collection.json)

@@ -1,0 +1,210 @@
+{
+  "info": {
+    "_postman_id": "49390b9e-d1e9-4b96-b528-deaf99d20a17",
+    "name": "Task API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "1274540"
+  },
+  "item": [
+    {
+      "name": "POST/register",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"qazim\",\r\n    \"password\": \"badmus123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/register",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET/ping",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://taskify-api-bph3.onrender.com/ping",
+          "protocol": "https",
+          "host": [
+            "taskify-api-bph3",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "ping"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST/login",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"qazim\",\r\n    \"password\": \"badmus123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://taskify-api-bph3.onrender.com/login",
+          "protocol": "https",
+          "host": [
+            "taskify-api-bph3",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST/tasks",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE3ODM1MDc5NjB9.XmGwN42QNgmb8FJp3kbmLI17bjg6SfVRN1a32xauSHY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Qazim's task\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://taskify-api-bph3.onrender.com/tasks",
+          "protocol": "https",
+          "host": [
+            "taskify-api-bph3",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET/tasks",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE3ODM1MTY0ODN9.RKOaeYam06NF3zn5hxwCgwcd6eKIm8VsVOtwhmjqfi4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Qazim's task\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://taskify-api-bph3.onrender.com/tasks",
+          "protocol": "https",
+          "host": [
+            "taskify-api-bph3",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "json_web_token_15jq",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_15jq",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_02iz",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_02iz",
+      "secret": true
+    }
+  ]
+}

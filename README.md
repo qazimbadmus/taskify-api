@@ -27,6 +27,7 @@ A secure REST API for managing user tasks with JWT authentication.
 ```bash
 pip install -r requirements.txt
 python app.py
+```
 
 **API Testing**
 
